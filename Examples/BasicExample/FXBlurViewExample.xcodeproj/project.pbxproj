@@ -21,9 +21,37 @@
 		01F311B017CA5C4600C54664 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01F311AE17CA5C4600C54664 /* ViewController.xib */; };
 		01F311BA17CA5D7E00C54664 /* Grass@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01F311B917CA5D7E00C54664 /* Grass@2x.jpg */; };
 		01F311BC17CA5DE600C54664 /* Grass.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01F311BB17CA5DE600C54664 /* Grass.jpg */; };
-		01F311BF17CA5E5600C54664 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F311BE17CA5E5600C54664 /* FXBlurView.m */; };
 		01F311C117CA5ECA00C54664 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F311C017CA5ECA00C54664 /* Accelerate.framework */; };
+		DB448A361EB3EA8A00EA75CB /* FXBlurView.h in Headers */ = {isa = PBXBuildFile; fileRef = DB448A341EB3EA8A00EA75CB /* FXBlurView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB448A391EB3EA8A00EA75CB /* FXBlurView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB448A321EB3EA8A00EA75CB /* FXBlurView.framework */; };
+		DB448A3A1EB3EA8A00EA75CB /* FXBlurView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DB448A321EB3EA8A00EA75CB /* FXBlurView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DB448A3F1EB3EA9D00EA75CB /* FXBlurView.h in Sources */ = {isa = PBXBuildFile; fileRef = 01F311BD17CA5E5600C54664 /* FXBlurView.h */; };
+		DB448A401EB3EA9D00EA75CB /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F311BE17CA5E5600C54664 /* FXBlurView.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB448A371EB3EA8A00EA75CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01F3118817CA5C4600C54664 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB448A311EB3EA8A00EA75CB;
+			remoteInfo = FXBlurView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DB448A3E1EB3EA8A00EA75CB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DB448A3A1EB3EA8A00EA75CB /* FXBlurView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0178250F18E1E049004C3815 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -48,6 +76,9 @@
 		01F311BD17CA5E5600C54664 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
 		01F311BE17CA5E5600C54664 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
 		01F311C017CA5ECA00C54664 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		DB448A321EB3EA8A00EA75CB /* FXBlurView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FXBlurView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB448A341EB3EA8A00EA75CB /* FXBlurView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
+		DB448A351EB3EA8A00EA75CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +88,17 @@
 			files = (
 				0178251018E1E049004C3815 /* QuartzCore.framework in Frameworks */,
 				01F311C117CA5ECA00C54664 /* Accelerate.framework in Frameworks */,
+				DB448A391EB3EA8A00EA75CB /* FXBlurView.framework in Frameworks */,
 				01F3119417CA5C4600C54664 /* UIKit.framework in Frameworks */,
 				01F3119617CA5C4600C54664 /* Foundation.framework in Frameworks */,
 				01F3119817CA5C4600C54664 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB448A2E1EB3EA8A00EA75CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +110,7 @@
 			children = (
 				01F311B617CA5C7300C54664 /* FXBlurView */,
 				01F3119917CA5C4600C54664 /* FXBlurViewExample */,
+				DB448A331EB3EA8A00EA75CB /* FXBlurView */,
 				01F3119217CA5C4600C54664 /* Frameworks */,
 				01F3119117CA5C4600C54664 /* Products */,
 			);
@@ -80,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				01F3119017CA5C4600C54664 /* FXBlurViewExample.app */,
+				DB448A321EB3EA8A00EA75CB /* FXBlurView.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,7 +176,27 @@
 			path = ../../FXBlurView;
 			sourceTree = "<group>";
 		};
+		DB448A331EB3EA8A00EA75CB /* FXBlurView */ = {
+			isa = PBXGroup;
+			children = (
+				DB448A341EB3EA8A00EA75CB /* FXBlurView.h */,
+				DB448A351EB3EA8A00EA75CB /* Info.plist */,
+			);
+			path = FXBlurView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DB448A2F1EB3EA8A00EA75CB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB448A361EB3EA8A00EA75CB /* FXBlurView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		01F3118F17CA5C4600C54664 /* FXBlurViewExample */ = {
@@ -145,15 +206,35 @@
 				01F3118C17CA5C4600C54664 /* Sources */,
 				01F3118D17CA5C4600C54664 /* Frameworks */,
 				01F3118E17CA5C4600C54664 /* Resources */,
+				DB448A3E1EB3EA8A00EA75CB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DB448A381EB3EA8A00EA75CB /* PBXTargetDependency */,
 			);
 			name = FXBlurViewExample;
 			productName = FXBlurViewExample;
 			productReference = 01F3119017CA5C4600C54664 /* FXBlurViewExample.app */;
 			productType = "com.apple.product-type.application";
+		};
+		DB448A311EB3EA8A00EA75CB /* FXBlurView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB448A3B1EB3EA8A00EA75CB /* Build configuration list for PBXNativeTarget "FXBlurView" */;
+			buildPhases = (
+				DB448A2D1EB3EA8A00EA75CB /* Sources */,
+				DB448A2E1EB3EA8A00EA75CB /* Frameworks */,
+				DB448A2F1EB3EA8A00EA75CB /* Headers */,
+				DB448A301EB3EA8A00EA75CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FXBlurView;
+			productName = FXBlurView;
+			productReference = DB448A321EB3EA8A00EA75CB /* FXBlurView.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -163,6 +244,12 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Charcoal Design";
+				TargetAttributes = {
+					DB448A311EB3EA8A00EA75CB = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 01F3118B17CA5C4600C54664 /* Build configuration list for PBXProject "FXBlurViewExample" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -177,6 +264,7 @@
 			projectRoot = "";
 			targets = (
 				01F3118F17CA5C4600C54664 /* FXBlurViewExample */,
+				DB448A311EB3EA8A00EA75CB /* FXBlurView */,
 			);
 		};
 /* End PBXProject section */
@@ -196,6 +284,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DB448A301EB3EA8A00EA75CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -206,11 +301,27 @@
 				01F311A017CA5C4600C54664 /* main.m in Sources */,
 				01F311A417CA5C4600C54664 /* AppDelegate.m in Sources */,
 				01F311AD17CA5C4600C54664 /* ViewController.m in Sources */,
-				01F311BF17CA5E5600C54664 /* FXBlurView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB448A2D1EB3EA8A00EA75CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB448A3F1EB3EA9D00EA75CB /* FXBlurView.h in Sources */,
+				DB448A401EB3EA9D00EA75CB /* FXBlurView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB448A381EB3EA8A00EA75CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB448A311EB3EA8A00EA75CB /* FXBlurView */;
+			targetProxy = DB448A371EB3EA8A00EA75CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		01F3119C17CA5C4600C54664 /* InfoPlist.strings */ = {
@@ -298,6 +409,8 @@
 				GCC_PREFIX_HEADER = "FXBlurViewExample/FXBlurViewExample-Prefix.pch";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "FXBlurViewExample/FXBlurViewExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				RUN_CLANG_STATIC_ANALYZER = YES;
@@ -317,6 +430,8 @@
 				GCC_PREFIX_HEADER = "FXBlurViewExample/FXBlurViewExample-Prefix.pch";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "FXBlurViewExample/FXBlurViewExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				RUN_CLANG_STATIC_ANALYZER = YES;
@@ -325,6 +440,94 @@
 					"-Wextra",
 				);
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DB448A3C1EB3EA8A00EA75CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = FXBlurView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chaione.FXBlurView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DB448A3D1EB3EA8A00EA75CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = FXBlurView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chaione.FXBlurView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -348,6 +551,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		DB448A3B1EB3EA8A00EA75CB /* Build configuration list for PBXNativeTarget "FXBlurView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB448A3C1EB3EA8A00EA75CB /* Debug */,
+				DB448A3D1EB3EA8A00EA75CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
