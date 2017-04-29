@@ -22,11 +22,11 @@
 		01F311BA17CA5D7E00C54664 /* Grass@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01F311B917CA5D7E00C54664 /* Grass@2x.jpg */; };
 		01F311BC17CA5DE600C54664 /* Grass.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01F311BB17CA5DE600C54664 /* Grass.jpg */; };
 		01F311C117CA5ECA00C54664 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F311C017CA5ECA00C54664 /* Accelerate.framework */; };
-		DB448A361EB3EA8A00EA75CB /* FXBlurView.h in Headers */ = {isa = PBXBuildFile; fileRef = DB448A341EB3EA8A00EA75CB /* FXBlurView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB448A391EB3EA8A00EA75CB /* FXBlurView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB448A321EB3EA8A00EA75CB /* FXBlurView.framework */; };
 		DB448A3A1EB3EA8A00EA75CB /* FXBlurView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DB448A321EB3EA8A00EA75CB /* FXBlurView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DB448A3F1EB3EA9D00EA75CB /* FXBlurView.h in Sources */ = {isa = PBXBuildFile; fileRef = 01F311BD17CA5E5600C54664 /* FXBlurView.h */; };
 		DB448A401EB3EA9D00EA75CB /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F311BE17CA5E5600C54664 /* FXBlurView.m */; };
+		DB4490241EB44DFE00EA75CB /* FXBlurView.h in Headers */ = {isa = PBXBuildFile; fileRef = 01F311BD17CA5E5600C54664 /* FXBlurView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -192,7 +192,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB448A361EB3EA8A00EA75CB /* FXBlurView.h in Headers */,
+				DB4490241EB44DFE00EA75CB /* FXBlurView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,6 +559,7 @@
 				DB448A3D1EB3EA8A00EA75CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
